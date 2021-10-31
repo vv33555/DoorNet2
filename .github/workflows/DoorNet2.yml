@@ -68,12 +68,7 @@ jobs:
         svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/boot/uboot-rockchip package/boot/uboot-rockchip
         rm -rf target/linux/rockchip
         svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/target/linux/rockchip target/linux/rockchip
-        
-    - name: Cache
-      uses: klever1988/cachewrtbuild@main
-      with:
-        ccache: 'true'
-        prefix: ${{ github.workspace }}/openwrt
+
     - name: Update Feeds
       id: update
       run: |
