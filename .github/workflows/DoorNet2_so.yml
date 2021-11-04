@@ -1,4 +1,4 @@
-name: DoorNet2
+name: DoorNet2_so
 
 on:
   repository_dispatch:
