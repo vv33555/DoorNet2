@@ -67,8 +67,7 @@ jobs:
         rm -rf package/boot/uboot-rockchip
         svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/boot/uboot-rockchip package/boot/uboot-rockchip
         rm -rf target/linux/rockchip
-        svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/target/linux/rockchip target/linux/rockchip
-        wget -P target/linux/rockchip/patches-5.4/ https://raw.githubusercontent.com/LubanCat/DoorNet-OpenWrt/DN1-DN2-Overclock/target/linux/rockchip/patches-5.4/921-DoorNet2-overclock-to-2.2-1.8GHz.patch
+        svn co https://github.com/KLT007/lede/trunk/target/linux/rockchip target/linux/rockchip
 
     - name: Update Feeds
       id: update
