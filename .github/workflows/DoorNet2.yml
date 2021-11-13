@@ -63,7 +63,11 @@ jobs:
         git config --global user.email "git@github.com"
         git config --global user.name "GitHub"
         git clone $REPO_URL -b $REPO_BRANCH openwrt
-
+        cd openwrt
+        rm -rf package/kernel/rtl8821cu
+        svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
+        rm -rf package/network/services/hostapd
+        svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/network/services/hostapd package/network/services/hostapd
     - name: Update Feeds
       id: update
       run: |
