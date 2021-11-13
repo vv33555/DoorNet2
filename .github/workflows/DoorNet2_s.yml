@@ -67,7 +67,10 @@ jobs:
         pushd target/linux/rockchip/patches-5.4
         cp -f $GITHUB_WORKSPACE/patches/994-ojbk_cpu.patch 994-ojbk_cpu.patch
         popd
-        
+        rm -rf package/kernel/rtl8821cu
+        svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
+        rm -rf package/network/services/hostapd
+        svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/network/services/hostapd package/network/services/hostapd
     - name: Update Feeds
       id: update
       run: |
