@@ -1,4 +1,7 @@
 # DoorNet2
+# 系统截图
+![image](https://user-images.githubusercontent.com/74764072/142339482-a96aeae6-5379-4fcc-9553-17ee903e5ae9.png)
+
 # EMMC、TF卡刷机方法
 
 - 通过EMMC启动和通过SD卡启动的过程不尽相同，在接下来的文档中，我们将对两种启动方式做详细说明。
