@@ -18,7 +18,7 @@
 - 烧录软件：[RKDevTool_Release_v2.81](https://github.com/DHDAXCW/Station_P2/releases/download/Station_P2/RKDevTool_Release_v2.81.zip)
 - boot-dn2配置：[MiniLoaderAll-DN2.bin](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/MiniLoaderAll-DN2.bin)
 - 下载固件：[Doornet2](https://github.com/DHDAXCW/DoorNet2/releases)
-### 按照驱动
+### 安装驱动
 - 下载驱动程序：[DriverAssitant_v5.1.1](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/DriverAssitant_v5.1.1.zip) 使用压缩工具解压 DriverAssitant_v5.1.1.zip 到任意路径下
 ![image](https://user-images.githubusercontent.com/74764072/142338731-792e8862-8d9f-4b20-b155-84a4cd95b570.png)
 - 鼠标双击 DriverInstall.exe 安装驱动程序
