@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# fix netdata
+rm -rf ./feeds/packages/admin/netdata
+svn co https://github.com/WYC-2020/packages/trunk/admin/netdata ./feeds/packages/admin/netdata
+
 # Clone community packages to package/community
 mkdir package/community
 pushd package/community
