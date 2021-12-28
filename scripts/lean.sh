@@ -184,6 +184,12 @@ wget -P package/network/services/hostapd/files https://raw.githubusercontent.com
 rm -rf package/kernel/mac80211/files/lib/wifi/mac80211.sh
 wget -P package/kernel/mac80211/files/lib/wifi https://raw.githubusercontent.com/DHDAXCW/RK356X/main/package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
+# 以太网MAC地址存到eMMC/TF
+pushd target/linux/rockchip/armv8/base-files/etc/board.d
+rm -rf 02_network
+wget wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockchip/armv8/base-files/etc/board.d/02_network
+popd
+
 rm -rf ./package/kernel/linux/modules/video.mk
 wget -P package/kernel/linux/modules/ https://github.com/immortalwrt/immortalwrt/raw/master/package/kernel/linux/modules/video.mk
 wget -P target/linux/rockchip/patches-5.4 https://raw.githubusercontent.com/DHDAXCW/package_target/master/107-Add-support-for-off-on-delay-kernel-5.4.patch
