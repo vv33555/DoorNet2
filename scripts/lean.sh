@@ -184,10 +184,10 @@ wget -P package/network/services/hostapd/files https://raw.githubusercontent.com
 rm -rf package/kernel/mac80211/files/lib/wifi/mac80211.sh
 wget -P package/kernel/mac80211/files/lib/wifi https://raw.githubusercontent.com/DHDAXCW/RK356X/main/package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
-# 以太网MAC地址存到eMMC/TF
+# 将以太网MAC地址存到eMMC/TF
 pushd target/linux/rockchip/armv8/base-files/etc/board.d
 rm -rf 02_network
-wget wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockchip/armv8/base-files/etc/board.d/02_network
+wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockchip/armv8/base-files/etc/board.d/02_network
 popd
 
 rm -rf ./package/kernel/linux/modules/video.mk
