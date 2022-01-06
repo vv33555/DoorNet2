@@ -177,14 +177,14 @@ make && sudo make install
 popd
 
 # 修复无线mac问题
-rm -rf package/kernel/rtl8821cu
-svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
-rm -rf package/kernel/mac80211/files/lib/netifd/wireless/mac80211.sh
-wget -P package/kernel/mac80211/files/lib/netifd/wireless https://raw.githubusercontent.com/DHDAXCW/RK356X/main/package/kernel/mac80211/files/lib/netifd/wireless/mac80211.sh
-rm -rf package/network/services/hostapd/files/hostapd.sh
-wget -P package/network/services/hostapd/files https://raw.githubusercontent.com/DHDAXCW/RK356X/main/package/network/services/hostapd/files/hostapd.sh
-rm -rf package/kernel/mac80211/files/lib/wifi/mac80211.sh
-wget -P package/kernel/mac80211/files/lib/wifi https://raw.githubusercontent.com/DHDAXCW/RK356X/main/package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#rm -rf package/kernel/rtl8821cu
+#svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
+#rm -rf package/kernel/mac80211/files/lib/netifd/wireless/mac80211.sh
+#wget -P package/kernel/mac80211/files/lib/netifd/wireless https://raw.githubusercontent.com/DHDAXCW/RK356X/main/package/kernel/mac80211/files/lib/netifd/wireless/mac80211.sh
+#rm -rf package/network/services/hostapd/files/hostapd.sh
+#wget -P package/network/services/hostapd/files https://raw.githubusercontent.com/DHDAXCW/RK356X/main/package/network/services/hostapd/files/hostapd.sh
+#rm -rf package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#wget -P package/kernel/mac80211/files/lib/wifi https://raw.githubusercontent.com/DHDAXCW/RK356X/main/package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 # 将以太网MAC地址存到eMMC/TF
 pushd target/linux/rockchip/armv8/base-files/etc/board.d
