@@ -26,7 +26,7 @@
 - 点击驱动安装，安装驱动程序。弹出驱动安装成功的界面，点击确定完成驱动安装。
 ![image](https://user-images.githubusercontent.com/74764072/142338797-fc6dc321-8983-4731-b3ba-6aa4efcf224a.png)
 ### 安装烧录工具
-- 下载烧录软件：[RKDevTool_Release_v2.81](https://github.com/DHDAXCW/Station_P2/releases/download/Station_P2/RKDevTool_Release_v2.81.zip)，使用压缩工具解压 RKDevTool_Release_v2.84.zip 到任意路径下，由于烧录工具是无需安装的，解压完成即可
+- 下载烧录软件：[RKDevTool_Release_v2.84](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/RKDevTool_Release_v2.84.zip)，使用压缩工具解压 RKDevTool_Release_v2.84.zip 到任意路径下，由于烧录工具是无需安装的，解压完成即可
 ![image](https://user-images.githubusercontent.com/74764072/142338832-332474a3-f4c8-4331-a586-9f3c139a30a0.png)
 - 由于下载的镜像是经过压缩的,我们需要将镜像解压缩成img格式才能让烧录软件识别
 - 下载固件[Doornet2](https://github.com/DHDAXCW/DoorNet2/releases)  我们将 openwrt-embedfire_doornet2-ext4-2021xxxx.img.gz 下载并解压为img格式。
