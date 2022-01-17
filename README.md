@@ -12,7 +12,7 @@
 - 稳定版_默频 不含有超频，稳定性，发热极少
 - 全插件_默频 带有全插件，而且不超频，发热极少
 - 全插件_超频（推荐）满足全部要求，插件都有
-- 风扇链接 [点击进入](https://s.click.taobao.com/t?e=m%3D2%26s%3Dd8Ack0Lbx8McQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XJRAdhuF14FMXpyNmcFd6mT8sviUM61dt2T0mcOGN1M6FAj1gqltKaEfKzCcEr0EW0YuhTK3FPxiHMT7yc3NZrQKSOkJV8harV3phaPbavinqGCwVfdcN0wcSpj5qSCmbA%3D)  建议用这种风扇
+
 # [EMMC TF 刷机方法](https://github.com/DHDAXCW/DoorNet2/blob/main/emmc.md)
 
 # 系统截图
@@ -20,11 +20,11 @@
 
 上面温度是没壳子跑测试的。。。
 ## 提示
- - 我的固件加了动态超频，不管热不热这是取决后台运行程序在跑什么。
- - 感觉很热  就加风扇，推荐 风扇6cm×6cm，薄1cm，usb也行 或者端子线zh1.5（风扇脚本目前在建设中）
-
+ - 如果感觉很热  就加风扇，推荐 风扇6cm×6cm，薄1cm，usb也行 或者端子线zh1.5
+ - 风扇链接 [点击进入](https://s.click.taobao.com/t?e=m%3D2%26s%3Dd8Ack0Lbx8McQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XJRAdhuF14FMXpyNmcFd6mT8sviUM61dt2T0mcOGN1M6FAj1gqltKaEfKzCcEr0EW0YuhTK3FPxiHMT7yc3NZrQKSOkJV8harV3phaPbavinqGCwVfdcN0wcSpj5qSCmbA%3D)  建议用这种风扇
 # [赏个鸡腿吧](https://afdian.net/@dhdaxcw/plan)
 ### https://afdian.net/@dhdaxcw/plan
+
 
 ## 鸣谢
 
