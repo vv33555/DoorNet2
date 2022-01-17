@@ -19,4 +19,30 @@
 ![899241033](https://user-images.githubusercontent.com/74764072/149703553-aa9dc8cb-0d2e-4f6a-aca7-77ff688b3bac.png)
 
 上面温度是没壳子跑测试的。。。
+## 提示
+ - 我的固件加了动态超频，不管热不热这是取决后台运行程序在跑什么。
+ - 感觉很热  就加风扇，推荐 风扇6cm×6cm，薄1cm，usb也行 或者端子线zh1.5（风扇脚本目前在建设中）
+
+# [赏个鸡腿吧](https://afdian.net/@dhdaxcw/plan)
+### https://afdian.net/@dhdaxcw/plan
+
+## 鸣谢
+
+特别感谢以下项目： 
+
+Openwrt 官方项目：
+
+<https://github.com/openwrt/openwrt>
+
+Lean 大的 Openwrt 项目：
+
+<https://github.com/coolsnowwolf/lede>
+
+immortalwrt 的 OpenWrt 项目：
+
+<https://github.com/immortalwrt/immortalwrt>
+
+P3TERX 大佬的 Actions-OpenWrt 项目：
+
+<https://github.com/P3TERX/Actions-OpenWrt>
 
