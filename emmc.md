@@ -14,7 +14,7 @@
 - 访问下载地址，同时提供了系统镜像和烧录工具，下载烧录工具和相应的系统镜像：
 - 双公头USB线一根，用于在PC和DoorNet2之间传输数据
 - 驱动程序：[DriverAssitant_v5.1.1](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/DriverAssitant_v5.1.1.zip) 
-- 烧录软件：[RKDevTool_Release_v2.81](https://github.com/DHDAXCW/Station_P2/releases/download/Station_P2/RKDevTool_Release_v2.81.zip)
+- 烧录软件：[RKDevTool_Release_v2.84](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/RKDevTool_Release_v2.84.zip)
 - boot-dn2配置：[MiniLoaderAll-DN2.bin](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/MiniLoaderAll-DN2.bin)
 - 下载固件：[Doornet2](https://github.com/DHDAXCW/DoorNet2/releases)
 ### 安装驱动
