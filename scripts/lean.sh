@@ -39,7 +39,7 @@ git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
 git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
 
 # Add luci-app-bypass
-# git clone https://github.com/garypang13/luci-app-bypass.git
+# git clone --depth=1 https://github.com/garypang13/luci-app-bypass.git
 
 # Add OpenClash
 git clone --depth=1 -b master https://github.com/vernesong/OpenClash
@@ -106,7 +106,7 @@ svn co https://github.com/zcy85611/Openwrt-Package/trunk/udp2raw
 svn co https://github.com/zcy85611/Openwrt-Package/trunk/udpspeeder-tunnel
 
 # Add luci-app-poweroff
-git clone https://github.com/esirplayground/luci-app-poweroff
+git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff
 
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
