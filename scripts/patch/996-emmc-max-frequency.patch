@@ -4,7 +4,7 @@
  
  &sdhci {
  	bus-width = <8>;
-+	max-frequency = <150000000>;
++	max-frequency = <200000000>;
  	supports-emmc;
 -	assigned-clock-rates = <150000000>;
 -	mmc-hs400-1_8v;
