@@ -1,11 +1,10 @@
 --- a/arch/arm64/boot/dts/rockchip/rk3399-doornet2.dtsi
 +++ b/arch/arm64/boot/dts/rockchip/rk3399-doornet2.dtsi
-@@ -541,10 +541,10 @@
+@@ -541,10 +541,8 @@
  
  &sdhci {
  	bus-width = <8>;
-+	max-frequency = <200000000>;
- 	supports-emmc;
+-	supports-emmc;
 -	assigned-clock-rates = <150000000>;
 -	mmc-hs400-1_8v;
 -	mmc-hs400-enhanced-strobe;
