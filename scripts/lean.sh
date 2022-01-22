@@ -190,6 +190,9 @@ rm -rf 02_network
 wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockchip/armv8/base-files/etc/board.d/02_network
 popd
 
+# 将emmc改为hs200模式，频率默认200M
+cp -f $GITHUB_WORKSPACE/scripts/patch/996-emmc-max-frequency.patch target/linux/rockchip/patches-5.4/996-emmc-max-frequency.patch
+
 rm -rf ./package/kernel/linux/modules/video.mk
 wget -P package/kernel/linux/modules/ https://github.com/immortalwrt/immortalwrt/raw/master/package/kernel/linux/modules/video.mk
 wget -P target/linux/rockchip/patches-5.4 https://raw.githubusercontent.com/DHDAXCW/package_target/master/107-Add-support-for-off-on-delay-kernel-5.4.patch
