@@ -191,7 +191,9 @@ wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockch
 popd
 
 # 将emmc改为hs200模式，频率默认200M
-cp -f $GITHUB_WORKSPACE/scripts/patch/996-emmc-max-frequency.patch target/linux/rockchip/patches-5.4/996-emmc-max-frequency.patch
+pushd target/linux/rockchip/patches-5.4
+cp -f $GITHUB_WORKSPACE/scripts/patch/996-emmc-max-frequency.patch 996-emmc-max-frequency.patch
+popd
 
 rm -rf ./package/kernel/linux/modules/video.mk
 wget -P package/kernel/linux/modules/ https://github.com/immortalwrt/immortalwrt/raw/master/package/kernel/linux/modules/video.mk
