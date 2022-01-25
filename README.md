@@ -16,7 +16,16 @@
 # [EMMC TF 刷机方法](https://github.com/DHDAXCW/DoorNet2/blob/main/emmc.md)
 
 # 系统截图
-![899241033](https://user-images.githubusercontent.com/74764072/149703553-aa9dc8cb-0d2e-4f6a-aca7-77ff688b3bac.png)
+![image](https://user-images.githubusercontent.com/74764072/150896000-83fdeb7c-7ddd-4ffa-a2dc-45a1d86a3849.png)
+
+![image](https://user-images.githubusercontent.com/74764072/150896121-f24cd658-2a9f-49d0-9e88-ceaedd1bc67f.png)
+
+![image](https://user-images.githubusercontent.com/74764072/150896194-92269903-6865-40aa-b227-d068ae067510.png)
+
+![image](https://user-images.githubusercontent.com/74764072/150896256-f8603322-332b-4bea-bfe3-b2f7ab1cd29a.png)
+
+![image](https://user-images.githubusercontent.com/74764072/150896333-71a0a2d5-a7a1-429b-a3d6-8824d4d279a0.png)
+
 
 上面温度是没壳子跑测试的。。。
 ## 提示
