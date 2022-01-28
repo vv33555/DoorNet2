@@ -34,6 +34,9 @@
 # [赏个鸡腿吧](https://afdian.net/@dhdaxcw/plan)
 ### https://afdian.net/@dhdaxcw/plan
 
+#更新 2.2
+- 加入dmc
+
 
 ## 鸣谢
 
