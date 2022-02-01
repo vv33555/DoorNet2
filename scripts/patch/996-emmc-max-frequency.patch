@@ -30,7 +30,7 @@
 -	};
 +	snps,reset-gpio = <&gpio3 RK_PB7 GPIO_ACTIVE_LOW>;
 +	snps,reset-active-low;
-+	snps,reset-delays-us = <0 10000 50000 100000>;
++	snps,reset-delays-us = <0 10000 50000>;
 +	tx_delay = <0x14>;
 +	rx_delay = <0x0f>;
 +	status = "okay";
