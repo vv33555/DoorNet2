@@ -68,3 +68,16 @@
 
 -- 
 2.25.1
+--- a/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
++++ b/drivers/net/ethernet/stmicro/stmmac/stmmac_main.c
+@@ -2191,6 +2191,8 @@ static int stmmac_init_dma_engine(struct stmmac_priv *priv)
+ 	if (priv->extend_desc && (priv->mode == STMMAC_RING_MODE))
+ 		atds = 1;
+ 
++	msleep(1500);
++
+ 	ret = stmmac_reset(priv, priv->ioaddr);
+ 	if (ret) {
+ 		dev_err(priv->device, "Failed to reset the dma\n");
+-- 
+2.25.1
