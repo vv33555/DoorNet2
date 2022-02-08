@@ -190,9 +190,9 @@ rm -rf 02_network
 wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockchip/armv8/base-files/etc/board.d/02_network
 popd
 
-# 将emmc改为hs200模式，频率默认200M
+# Generic for the device tree
 pushd target/linux/rockchip/patches-5.4
-cp -f $GITHUB_WORKSPACE/scripts/patch/996-emmc-max-frequency.patch 996-emmc-max-frequency.patch
+cp -f $GITHUB_WORKSPACE/scripts/patch/996-Generic-for-the-device-tree.patch 996-Generic-for-the-device-tree.patch
 popd
 
 rm -rf ./package/kernel/linux/modules/video.mk
