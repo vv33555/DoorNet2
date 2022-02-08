@@ -262,7 +262,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: ${{ steps.tag.outputs.release_date }} DoorNet2_稳定版_默频
+          name: ${{ steps.tag.outputs.release_date }} DoorNet2_Lite_稳定版_默频
           tag_name: ${{ steps.tag.outputs.release_tag }}
           body_path: release.txt
           files: ${{ env.FIRMWARE }}/*
