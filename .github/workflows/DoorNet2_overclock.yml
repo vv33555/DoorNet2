@@ -1,4 +1,4 @@
-name: DoorNet2_s
+name: DoorNet2_overclock
 
 on:
   repository_dispatch:
