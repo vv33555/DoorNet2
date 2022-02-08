@@ -1,4 +1,4 @@
-name: DoorNet2_s_docker
+name: DoorNet2_overclock_docker
 
 on:
   repository_dispatch:
