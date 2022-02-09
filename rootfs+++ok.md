@@ -26,4 +26,4 @@ poweroff
 
 ```
 
-建议创建脚本sh来执行
+(建议创建脚本sh来执行)[https://github.com/DHDAXCW/DoorNet2/blob/main/scripts/patchs/rootfs.sh]
