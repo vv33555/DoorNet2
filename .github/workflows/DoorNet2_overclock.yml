@@ -65,7 +65,7 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         cd openwrt
         pushd target/linux/rockchip/patches-5.4
-        cp -f $GITHUB_WORKSPACE/scripts/patch/994-Device-tree-add-overclocking.patch 994-Device-tree-add-overclocking.patch
+        cp -f $GITHUB_WORKSPACE/scripts/patchs/994-Device-tree-add-overclocking.patch 994-Device-tree-add-overclocking.patch
         popd
 
     - name: Cache
