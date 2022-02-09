@@ -174,7 +174,7 @@ pushd po2lmo
 make && sudo make install
 popd
 
-# 修复无线mac问题
+# Fix Wireless MAC issues
 rm -rf package/kernel/rtl8821cu
 svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
 rm -rf package/kernel/mac80211/files/lib/netifd/wireless/mac80211.sh
@@ -183,8 +183,10 @@ rm -rf package/network/services/hostapd/files/hostapd.sh
 wget -P package/network/services/hostapd/files https://raw.githubusercontent.com/DHDAXCW/RK356X/main/package/network/services/hostapd/files/hostapd.sh
 rm -rf package/kernel/mac80211/files/lib/wifi/mac80211.sh
 wget -P package/kernel/mac80211/files/lib/wifi https://raw.githubusercontent.com/DHDAXCW/RK356X/main/package/kernel/mac80211/files/lib/wifi/mac80211.sh
+rm -rf ./package/kernel/linux/modules/video.mk
+wget -P package/kernel/linux/modules/ https://github.com/immortalwrt/immortalwrt/raw/master/package/kernel/linux/modules/video.mk
 
-# 将以太网MAC地址存到eMMC/TF
+# Save Ethernet MAC address to eMMC/TF
 pushd target/linux/rockchip/armv8/base-files/etc/board.d
 rm -rf 02_network
 wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockchip/armv8/base-files/etc/board.d/02_network
@@ -195,14 +197,11 @@ pushd target/linux/rockchip/patches-5.4
 cp -f $GITHUB_WORKSPACE/scripts/patchs/996-Generic-for-the-device-tree.patch 996-Generic-for-the-device-tree.patch
 popd
 
-# u-boot
+# Priority SD u boot
 pushd package/boot/uboot-rockchip/patches
-cp -f $GITHUB_WORKSPACE/scripts/patchs/106-rockchip-rk3399-priority-boot-sd-boot.patch 106-rockchip-rk3399-priority-boot-sd-boot.patch
+cp -f $GITHUB_WORKSPACE/scripts/patchs/106-rockchip-rk3399-Priority-SD-boot.patch 106-rockchip-rk3399-Priority-SD-boot.patch
 popd
 
-rm -rf ./package/kernel/linux/modules/video.mk
-wget -P package/kernel/linux/modules/ https://github.com/immortalwrt/immortalwrt/raw/master/package/kernel/linux/modules/video.mk
-wget -P target/linux/rockchip/patches-5.4 https://raw.githubusercontent.com/DHDAXCW/package_target/master/107-Add-support-for-off-on-delay-kernel-5.4.patch
 # Change default shell to zsh
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
