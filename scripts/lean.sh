@@ -192,7 +192,12 @@ popd
 
 # Generic for the device tree
 pushd target/linux/rockchip/patches-5.4
-cp -f $GITHUB_WORKSPACE/scripts/patch/996-Generic-for-the-device-tree.patch 996-Generic-for-the-device-tree.patch
+cp -f $GITHUB_WORKSPACE/scripts/patchs/996-Generic-for-the-device-tree.patch 996-Generic-for-the-device-tree.patch
+popd
+
+# u-boot
+pushd package/boot/uboot-rockchip/patches
+cp -f $GITHUB_WORKSPACE/scripts/patchs/106-rockchip-rk3399-priority-boot-sd-boot.patch 106-rockchip-rk3399-priority-boot-sd-boot.patch
 popd
 
 rm -rf ./package/kernel/linux/modules/video.mk
