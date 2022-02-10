@@ -1,15 +1,19 @@
---- a/arch/arm/dts/rk3399-u-boot.dtsi
-+++ b/arch/arm/dts/rk3399-u-boot.dtsi
-@@ -8,8 +8,8 @@
+--- a/arch/arm/dts/rk3399-doornet2-u-boot.dtsi
++++ b/arch/arm/dts/rk3399-doornet2-u-boot.dtsi
+@@ -9,8 +9,13 @@
+ #include "rk3399-sdram-ddr3-1866.dtsi"
  
- / {
- 	aliases {
--		mmc0 = &sdhci;
--		mmc1 = &sdmmc;
+ /{
++	aliases {
 +		mmc0 = &sdmmc;
 +		mmc1 = &sdhci;
- 		pci0 = &pcie0;
- 		spi1 = &spi1;
++	};
++
+ 	chosen {
+-		u-boot,spl-boot-order = "same-as-spl", &sdhci, &sdmmc;
++		u-boot,spl-boot-order = "same-as-spl", &sdmmc, &sdhci;
  	};
+ };
+ 
 -- 
 2.25.1
