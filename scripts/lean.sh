@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash --bate
 
 # fix netdata
 rm -rf ./feeds/packages/admin/netdata
