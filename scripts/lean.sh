@@ -215,6 +215,7 @@ sed -i "s/OpenWrt /DHDAXCW @ FusionWrt /g" package/lean/default-settings/files/z
 # sed -i 's/5.4/5.10/g' target/linux/rockchip/Makefile
 
 # Custom configs
+
 # git am $GITHUB_WORKSPACE/patches/lean/*.patch
 git am $GITHUB_WORKSPACE/patches/*.patch
 
