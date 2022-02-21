@@ -215,10 +215,10 @@ sed -i "s/OpenWrt /DHDAXCW @ FusionWrt /g" package/lean/default-settings/files/z
 # sed -i 's/5.4/5.10/g' target/linux/rockchip/Makefile
 
 # upgrade the kernel
-pushd include
-rm -rf kernel-5.4
-wget https://raw.githubusercontent.com/DHDAXCW/lede/master/include/kernel-5.4
-popd
+#pushd include
+#rm -rf kernel-5.4
+#wget https://raw.githubusercontent.com/DHDAXCW/lede/master/include/kernel-5.4
+#popd
 
 # Custom configs
 # git am $GITHUB_WORKSPACE/patches/lean/*.patch
