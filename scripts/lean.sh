@@ -75,6 +75,7 @@ rm -rf ../../customfeeds/luci/applications/luci-app-kodexplorer
 # Add luci-app-dockerman
 rm -rf ../../customfeeds/luci/collections/luci-lib-docker
 rm -rf ../../customfeeds/luci/applications/luci-app-docker
+rm -rf ../../customfeeds/luci/applications/luci-app-dockerman
 git clone --depth=1 https://github.com/lisaac/luci-app-dockerman
 git clone --depth=1 https://github.com/lisaac/luci-lib-docker
 
