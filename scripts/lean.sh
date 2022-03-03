@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# add doornet2
-rm -rf ./target/linux/rockchip
-svn co https://github.com/DHDAXCW/lede/trunk/target/linux/rockchip ./target/linux/rockchip
-
 # fix netdata
 rm -rf ./feeds/packages/admin/netdata
 svn co https://github.com/DHDAXCW/packages/branches/ok/admin/netdata ./feeds/packages/admin/netdata
