@@ -12,6 +12,9 @@
 - 稳定版_默频 不含有超频，稳定性，发热极少
 - 全插件_默频 带有全插件，而且不超频，发热极少
 - 全插件_超频（推荐）满足全部要求，插件都有
+# 购买设备
+- JackyLee https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.621e3d0df6lcxD&ft=t&id=670195918968
+- 官网 https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.16c11debx4XxEY&ft=t&id=668601945840
 
 # [EMMC TF 刷机方法](https://github.com/DHDAXCW/DoorNet2/blob/main/emmc.md)
 
