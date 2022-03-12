@@ -16,7 +16,7 @@
 - JackyLee https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.621e3d0df6lcxD&ft=t&id=670195918968
 - 官网 https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.16c11debx4XxEY&ft=t&id=668601945840
 
-# [EMMC TF 刷机方法](https://github.com/DHDAXCW/DoorNet2/blob/main/emmc.md)
+# [EMMC刷机方法](https://github.com/DHDAXCW/DoorNet2/blob/main/emmc.md)
 
 # 系统截图
 ![image](https://user-images.githubusercontent.com/74764072/150896000-83fdeb7c-7ddd-4ffa-a2dc-45a1d86a3849.png)
