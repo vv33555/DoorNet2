@@ -29,7 +29,6 @@
 
 ![image](https://user-images.githubusercontent.com/74764072/150896333-71a0a2d5-a7a1-429b-a3d6-8824d4d279a0.png)
 
-
 ## 提示
  - 如果感觉很热  就加风扇，推荐 风扇6cm×6cm，薄1cm，usb也行 或者1.25排针
  - 风扇链接 [点击进入](https://s.click.taobao.com/t?e=m%3D2%26s%3Dd8Ack0Lbx8McQipKwQzePOeEDrYVVa64LKpWJ%2Bin0XJRAdhuF14FMXpyNmcFd6mT8sviUM61dt2T0mcOGN1M6FAj1gqltKaEfKzCcEr0EW0YuhTK3FPxiHMT7yc3NZrQKSOkJV8harV3phaPbavinqGCwVfdcN0wcSpj5qSCmbA%3D)  建议用这种风扇
