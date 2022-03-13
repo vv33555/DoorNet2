@@ -16,6 +16,7 @@
 - 懂得openwrt玩法建议去买官网，小白不懂可以去下面其他商家，有售后支持。官网售后不懂。。。
 - BIGDONGDONG https://item.taobao.com/item.htm?spm=a230r.1.14.56.33e15e555hXDPd&id=670679179652
 - JackyLee https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.621e3d0df6lcxD&ft=t&id=670195918968
+- 壹阿壹阿壹 https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.67813d0dEmsMiR&ft=t&id=670082025644
 - 官网 https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.16c11debx4XxEY&ft=t&id=668601945840
 
 # [EMMC刷机方法](https://github.com/DHDAXCW/DoorNet2/blob/main/emmc.md)
