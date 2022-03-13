@@ -43,10 +43,8 @@
 ### U盘刷机方法，类似斐讯N1盒子采用dd命令烧录进去
 - 将U盘格式化为FAT32格式
 - 下载固件解压是img格式，复制到U盘根目录下，插dn2上开机
-- web后台--系统--挂载--打勾自动挂载磁盘--应用保存  如图：
-- 
-![image](https://user-images.githubusercontent.com/74764072/158054698-b6d13248-286a-4f37-87f9-139c01fe188a.png)
-
+- web后台--系统--挂载--打勾自动挂载未配置的磁盘分区--应用保存  如图：
+![image](https://user-images.githubusercontent.com/74764072/158067110-054bc73d-6fd0-423e-9c8e-2ac5cddda458.png)
 - 然后终端（ttyd）输入账号和密码
 - 命令执行执行写盘 `dd if=/mnt/sda1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M`
 - 写入完成后建议执行 sync 结束后拔了电源 U盘和tf卡。切记！！不要重启！！直接拔了电源就行
