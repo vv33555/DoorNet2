@@ -13,7 +13,7 @@
 - 全插件_默频 带有全插件，而且不超频，发热极少
 - 全插件_超频（推荐）满足全部要求，插件都有
 ### 购买设备
-- 懂得openwrt玩法建议去买官网的，小白不懂可以去下面其他商家，有售后支持，官网不懂。。。
+- 懂得openwrt玩法建议去买官网的，小白不懂可以去下面其他商家，有售后支持，官网售后不懂。。。
 - BIGDONGDONG https://item.taobao.com/item.htm?spm=a230r.1.14.56.33e15e555hXDPd&id=670679179652
 - JackyLee https://item.taobao.com/item.htm?spm=a21dvs.23580594.0.0.621e3d0df6lcxD&ft=t&id=670195918968
 - 官网 https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.16c11debx4XxEY&ft=t&id=668601945840
