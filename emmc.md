@@ -50,7 +50,7 @@
 - 然后终端（ttyd）输入账号和密码
 - 命令执行执行写盘 `dd if=/mnt/sda1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M`
 - 写入完成后建议执行 sync 结束后拔了电源 U盘和tf卡。切记！！不要重启！！直接拔了电源就行
-- 
+- 以上方法是U盘刷机的，也可以tf，格式化跟上面一样，但是tf路径不一定成功，参考一下tf的路径怎么刷就行
 ### 问题收集
 - 如果在下载过程中提示下载Boot失败，可以断开所有DoorNet2上的连接线，重试尝试进入MASKROM模式下载。
 - 如果上电后超过十秒仍然无法识别，可以移除电源和USB的连接，然后重试上一步操作。
