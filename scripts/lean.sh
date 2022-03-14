@@ -99,7 +99,7 @@ git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 
 # Add extra wireless drivers
 # svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8812au-ac
-# svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8821cu
+svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8821cu
 # svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8188eu
 # svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8192eu
 # svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl88x2bu
@@ -219,8 +219,8 @@ sed -i '/uci commit system/i\uci set system.@system[0].hostname='FusionWrt'' pac
 sed -i "s/OpenWrt /DHDAXCW @ FusionWrt /g" package/lean/default-settings/files/zzz-default-settings
 # find package/*/ feeds/*/ -maxdepth 6 -path "*luci-app-smartdns/luasrc/controller/smartdns.lua" | xargs -i sed -i 's/\"SmartDNS\")\, 4/\"SmartDNS\")\, 3/g' {} 
 
-# Test kernel 5.10
-sed -i 's/5.15/5.10/g' target/linux/rockchip/Makefile
+# Test kernel 5.4
+sed -i 's/5.4/5.15/g' target/linux/rockchip/Makefile
 
 # upgrade the kernel
 #pushd include
