@@ -66,13 +66,14 @@ jobs:
         #pushd target/linux/rockchip/patches-5.4
         #cp -f $GITHUB_WORKSPACE/scripts/patchs/994-Device-tree-add-overclocking.patch 994-Device-tree-add-overclocking.patch
         #popd
+        
     - name: Cache
       uses: klever1988/cachewrtbuild@main
       with:
         ccache: 'true'
         prefix: ${{ github.workspace }}/openwrt
-        clean: 'true'
-
+        clean: 'false'
+        
     - name: Update Feeds
       id: update
       run: |
