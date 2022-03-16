@@ -182,8 +182,8 @@ pushd po2lmo
 make && sudo make install
 popd
 
-rm -rf ./package/kernel/linux/modules/video.mk
-wget -P package/kernel/linux/modules/ https://github.com/immortalwrt/immortalwrt/raw/master/package/kernel/linux/modules/video.mk
+# rm -rf ./package/kernel/linux/modules/video.mk
+# wget -P package/kernel/linux/modules/ https://github.com/immortalwrt/immortalwrt/raw/master/package/kernel/linux/modules/video.mk
 
 # Save Ethernet MAC address to eMMC/TF
 pushd target/linux/rockchip/armv8/base-files/etc/board.d
