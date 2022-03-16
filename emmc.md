@@ -36,7 +36,8 @@
 ![image](https://user-images.githubusercontent.com/74764072/142338916-ab804a68-b1b5-4353-9535-9887ac74ba3e.png)
 - system文件的路径配置方法也相同，我们选择刚刚解压的img镜像。
 - 接着我们用双公头的USB线连接电脑和DoorNet2，一头插电脑的USB口，一头插DoorNet2下侧的USB口。
-- 先按下Flash(F)按键，然后接通DoorNet2的电源，等待烧录软件识别。 当提示 发现一个MASKROM设备 时，松开按键。
+- 先按下Flash(F 是灯前面的F，找针桶，不要像麒麟臂一样桶。。。)按键，然后上电接通DoorNet2的电源，等待烧录软件识别。 当提示 发现一个MASKROM设备 时，松开按键。
+- 还不懂？简单操作：桶前面F按键，然后上电，发现一个MASKROM设备 时，松开按键。
 ![image](https://user-images.githubusercontent.com/74764072/142338962-d7573171-6701-495b-a8d8-2e3b844e8e5e.png)
 - 然后执行写入设备中
 - 镜像下载完成之后DoorNet2会自动启动，绿色系统状态灯开始闪烁，说明系统正在启动。等待系统状态灯常亮时，操作系统完成启动。
