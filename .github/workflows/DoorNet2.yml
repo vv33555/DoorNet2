@@ -261,7 +261,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          name: ${{ steps.tag.outputs.release_date }} DoorNet2 Plus_全插件_默频
+          name: ${{ steps.tag.outputs.release_date }} DoorNet2_全插件_测试_5.15
           tag_name: ${{ steps.tag.outputs.release_tag }}
           body_path: release.txt
           files: ${{ env.FIRMWARE }}/*
