@@ -2,7 +2,24 @@
 #Build by lone_wind
 #清理文件
 clean_up () {
-    rm -rf openwrt*.img* /tmp/openwrt*.img* sha256sums* *update.sh*
+    rm -rf openwrt*.img* ${img_path}/openwrt*.img* sha256sums* *update.sh*
+}
+#容器检查
+docker_check () {
+    if opkg list | grep -q "docker"; then
+        /etc/init.d/dockerd stop
+    fi
+}
+#硬盘检查
+hd_check () {
+    hd_id='mmcblk0'
+    if [ ! -d /sys/block/$hd_id ]; then
+        hd_id='mmcblk1'
+        if [ ! -d /sys/block/$hd_id ]; then
+            hd_id='sda'
+        fi
+    fi
+#    part_check
 }
 #版本选择
 version_choose () {
@@ -93,8 +110,8 @@ firmware_confirm () {
 }
 #固件验证
 firmware_check () {
-    if [ -f /tmp/${firmware_id}  ]; then
-        echo -e '\e[92m检查升级文件大小\e[0m' && du -sh /tmp/${firmware_id}
+    if [ -f ${img_path}/${firmware_id}  ]; then
+        echo -e '\e[92m检查升级文件大小\e[0m' && du -sh ${img_path}/${firmware_id}
     elif [ -f ${firmware_id}.gz ]; then
         echo -e '\e[92m计算固件的sha256sum值\e[0m' && sha256sum ${firmware_id}.gz
         echo -e '\e[92m对比下列sha256sum值，检查固件是否完整\e[0m' && grep -i ${firmware_id}.gz sha256sums
@@ -120,8 +137,8 @@ version_confirm () {
 }
 #解压固件
 unzip_fireware () {
-    echo -e '\e[92m开始解压固件\e[0m' && gzip -cd ${firmware_id}.gz > /tmp/${firmware_id}
-    if [ -f /tmp/${firmware_id} ]; then
+    echo -e '\e[92m开始解压固件\e[0m' && gzip -cd ${firmware_id}.gz > ${img_path}/${firmware_id}
+    if [ -f ${img_path}/${firmware_id} ]; then
         echo -e '\e[92m已解压出升级文件\e[0m' && firmware_check
     else
         echo -e '\e[91m解压固件失败\e[0m' && clean_up && exit;
@@ -149,24 +166,23 @@ update_system () {
 #刷写系统
 dd_system () {
     echo -e '\e[92m开始升级系统\e[0m'
-    dd if=/tmp/${firmware_id} of=$(hd_id)
+    dd if=${img_path}/${firmware_id} of=/dev/$(hd_id)
     reboot
 }
 #系统更新
 update_firmware () {
-    clean_up && mount -t tmpfs -o remount,size=100% tmpfs /tmp
+    img_path=/tmp && clean_up && docker_check && hd_check
+    mount -t tmpfs -o remount,size=100% tmpfs /tmp
     real_mem=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}') && mini_mem=1572864
     if [ $real_mem -ge $mini_mem ]; then 
         work_path=/tmp && version_choose
-        format_choose && repo_set && search_file
-        firmware_check && unzip_fireware && update_system
+        format_choose && repo_set && search_file && firmware_check && unzip_fireware
+        update_system
     else
         echo -e '\e[91m您的内存小于2G，升级将不保留配置\e[0m'
         work_path=/root && version_num=3
-        hd_id=$(df / | tail -n1 | awk '{print $1}' | awk '{print substr($1, 1, length($1)-2)}')
-        format_choose && repo_set && search_file
-        firmware_check && unzip_fireware && dd_system
+        format_choose && repo_set && search_file && firmware_check && unzip_fireware
+        dd_system
     fi
 }
-
 update_firmware
