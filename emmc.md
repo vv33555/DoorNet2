@@ -42,13 +42,13 @@
 - 然后执行写入设备中
 - 镜像下载完成之后DoorNet2会自动启动，绿色系统状态灯开始闪烁，说明系统正在启动。等待系统状态灯常亮时，操作系统完成启动。
 ### U盘刷机方法，类似斐讯N1盒子采用dd命令烧录进去
-- 将U盘格式化为FAT32格式
+- 将U盘或者格式化为FAT32格式
 - 下载固件解压是img格式，复制到U盘根目录下，插dn2上开机
 - web后台--系统--挂载--打勾自动挂载未配置的磁盘分区--应用保存  如图：
 ![image](https://user-images.githubusercontent.com/74764072/158067110-054bc73d-6fd0-423e-9c8e-2ac5cddda458.png)
 - 然后终端（ttyd）输入账号和密码
-- U盘：命令执行写盘 `dd if=/mnt/sda1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M`
-- SD/TF卡：命令执行写盘 `dd if=/mnt/mmcblk1p1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M`
+- U盘：命令 `dd if=/mnt/sda1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M`
+- SD/TF卡：命令 `dd if=/mnt/mmcblk1p1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M`
 - 写入完成后建议执行 sync 结束后拔了电源 U盘和tf卡。切记！！不要重启！！直接拔了电源就行
 - 以上方法是U盘刷机的，也可以tf，格式化跟上面一样
 ### 问题收集
