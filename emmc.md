@@ -1,4 +1,4 @@
-# EMMC/[SD卡](https://github.com/DHDAXCW/DoorNet2/blob/main/emmc.md#u%E7%9B%98%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E7%B1%BB%E4%BC%BC%E6%96%90%E8%AE%AFn1%E7%9B%92%E5%AD%90%E9%87%87%E7%94%A8dd%E5%91%BD%E4%BB%A4%E7%83%A7%E5%BD%95%E8%BF%9B%E5%8E%BB)刷机方法
+# EMMC/[SD卡](https://github.com/DHDAXCW/DoorNet2/blob/main/emmc.md#%E9%80%9A%E8%BF%87sdtf-u%E7%9B%98%E5%88%B7%E6%9C%BA%E6%96%B9%E6%B3%95%E7%B1%BB%E4%BC%BC%E6%96%90%E8%AE%AFn1%E7%9B%92%E5%AD%90%E9%87%87%E7%94%A8dd%E5%91%BD%E4%BB%A4%E7%83%A7%E5%BD%95%E8%BF%9B%E5%8E%BB)刷机方法
 
 - 通过EMMC启动和通过SD卡启动的过程不尽相同，在接下来的文档中，我们将对两种启动方式做详细说明。
 
