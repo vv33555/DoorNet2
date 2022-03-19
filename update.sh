@@ -8,11 +8,6 @@ clean_up () {
 check_tmp () {
     mount -t tmpfs -o remount,size=100% tmpfs /tmp
     real_mem=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}') && mini_mem=1572864
-    if [ $real_mem -ge $mini_mem ]; then 
-        work_path=/tmp
-    else
-        echo -e '\e[91m您的内存小于2G，暂不支持在线升级，请手动卡刷\e[0m' && exit;
-    fi
 }
 #工作目录
 work_dir () {
