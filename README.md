@@ -22,7 +22,7 @@
 # [EMMC刷机方法](https://github.com/DHDAXCW/DoorNet2/blob/main/emmc.md)
 
 # 系统截图
-![image](https://user-images.githubusercontent.com/74764072/150896000-83fdeb7c-7ddd-4ffa-a2dc-45a1d86a3849.png)
+![image](https://user-images.githubusercontent.com/74764072/159131539-6919908e-502b-4754-88f5-f44e12f3bc10.png)
 
 ![image](https://user-images.githubusercontent.com/74764072/150896121-f24cd658-2a9f-49d0-9e88-ceaedd1bc67f.png)
 
