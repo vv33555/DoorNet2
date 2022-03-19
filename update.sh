@@ -16,7 +16,6 @@ check_tmp () {
 }
 #工作目录
 work_dir () {
-    echo -e '\e[92m您的内存小于2G，请挑选大于2G的分区\e[0m' && df -h
     echo -e '\e[91m请避免使用/overlay等系统分区\e[0m'
     echo -e '\e[92m建议扩容闪存介质后使用/mnt下的路径\e[0m'
     echo -e '\e[91m如果空间不够，解压镜像可能会造成系统卡死\e[0m'
