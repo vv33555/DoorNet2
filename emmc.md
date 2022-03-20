@@ -41,7 +41,7 @@
 ![image](https://user-images.githubusercontent.com/74764072/142338962-d7573171-6701-495b-a8d8-2e3b844e8e5e.png)
 - 然后执行写入设备中
 - 镜像下载完成之后DoorNet2会自动启动，绿色系统状态灯开始闪烁，说明系统正在启动。等待系统状态灯常亮时，操作系统完成启动。
-## 通过SD/TF U盘刷机方法，类似斐讯N1盒子采用dd命令烧录进去
+## 通过SD/TF U盘刷机方法，类似斐讯N1盒子采用dd命令烧录进去（此仅供参考，小白不要用！！！）
 - 将U盘或者格式化为FAT32格式
 - 下载固件解压是img格式，复制到U盘根目录下，插dn2上开机
 - web后台--系统--挂载--打勾自动挂载未配置的磁盘分区--应用保存  如图：
@@ -50,7 +50,7 @@
 - U盘：命令 `dd if=/mnt/sda1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M`
 - SD/TF卡：命令 `dd if=/mnt/mmcblk1p1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M`
 - 写入完成后建议执行 sync 结束后拔了电源 U盘和tf卡。切记！！不要重启！！直接拔了电源就行
-- 以上方法是U盘刷机的，也可以tf，格式化跟上面一样
+- 以上方法是U盘刷机的，也可以tf，格式化跟上面一样。有的插u盘路径不一定是sda1或者sda2
 ### 问题收集
 - 如果在下载过程中提示下载Boot失败，可以断开所有DoorNet2上的连接线，重试尝试进入MASKROM模式下载。
 - 如果上电后超过十秒仍然无法识别，可以移除电源和USB的连接，然后重试上一步操作。
