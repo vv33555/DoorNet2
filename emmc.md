@@ -47,8 +47,8 @@
 - web后台--系统--挂载--打勾自动挂载未配置的磁盘分区--应用保存  如图：
 ![image](https://user-images.githubusercontent.com/74764072/158067110-054bc73d-6fd0-423e-9c8e-2ac5cddda458.png)
 - 然后终端（ttyd）输入账号和密码
-- U盘：命令 `dd if=/mnt/sda1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M`
-- SD/TF卡：命令 `dd if=/mnt/mmcblk1p1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M`
+- U盘：命令 `dd if=/mnt/sda1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M conv=sync status=progress`
+- SD/TF卡：命令 `dd if=/mnt/mmcblk1p1/openwrt-rockchip-armv8-embedfire_doornet2-ext4-sysupgrade.img of=/dev/mmcblk0 bs=1M conv=sync status=progress`
 - 写入完成后建议执行 sync 结束后拔了电源 U盘和tf卡。切记！！不要重启！！直接拔了电源就行
 - 以上方法是U盘刷机的，也可以tf，格式化跟上面一样。有的插u盘路径不一定是sda1或者sda2
 ## 清除idbloader，破坏emmc分区，改为sd启动
