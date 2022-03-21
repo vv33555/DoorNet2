@@ -61,7 +61,7 @@
 - 能正常识别到MASKROM设备之后，我们可以点击执行按钮下载镜像。耐心等待镜像下载完成。
 - 初次启动初始化时间较长，约为2到3分钟，请耐心等待。
 - 驱动助手安装失败，此驱动支持Windows10以下，Mac SO Windows11不支持
-- 如果boot下载失败，请重新下载MiniLoaderAll-DN2.bin再刷入
+- 如果boot下载失败，请重新下载MiniLoaderAll-DN2.bin再刷入，如果失败，建议重启电脑即可。
 - emmc分区清了，开机上电检测不到boot就自动进maskrom模式，如果卡刷系统，侧从sd启动系统
 
 ### 更新日志
