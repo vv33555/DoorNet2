@@ -15,7 +15,7 @@
 - 双公头USB线一根，用于在PC和DoorNet2之间传输数据
 - 驱动程序：[DriverAssitant_v5.1.1](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/DriverAssitant_v5.1.1.zip)  仅支持Windows10以下，不支持Mac SO
 - 烧录软件：[RKDevTool_Release_v2.84](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/RKDevTool_Release_v2.84.zip) 不支持Mac SO
-- boot-dn2配置：[MiniLoaderAll-DN2.bin](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/MiniLoaderAll-DN2.bin)
+- MiniLoaderAll-DN2.bin配置：[MiniLoaderAll-DN2.bin](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/MiniLoaderAll-DN2.bin)
 - 下载固件：[Doornet2](https://github.com/DHDAXCW/DoorNet2/releases)
 ### 安装驱动
 - 下载驱动程序：[DriverAssitant_v5.1.1](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/DriverAssitant_v5.1.1.zip) 使用压缩工具解压 DriverAssitant_v5.1.1.zip 到任意路径下
@@ -61,7 +61,8 @@
 - 能正常识别到MASKROM设备之后，我们可以点击执行按钮下载镜像。耐心等待镜像下载完成。
 - 初次启动初始化时间较长，约为2到3分钟，请耐心等待。
 - 驱动助手安装失败，此驱动支持Windows10以下，Mac SO Windows11不支持
-- 如果boot下载失败，请重新
+- 如果boot下载失败，请重新下载MiniLoaderAll-DN2.bin再刷入
+- emmc分区清了，开机上电检测不到boot就自动进maskrom模式，如果卡刷系统，侧从sd启动系统
 
 ### 更新日志
 - 加入应用过滤，防止熊孩子玩王者上瘾，防止小女孩玩什么玩意网恋的。。。
