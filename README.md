@@ -5,7 +5,7 @@
 
 ### 默认编译  
 
-- 用户名：root 密码：password  管理IP：192.168.2.1
+- 用户名：root 密码：password  管理IP：192.168.11.1
 - 下载地址： https://github.com/DHDAXCW/DoorNet2/releases
 ### 固件分类 在[releases](https://github.com/DHDAXCW/DoorNet2/releases)有备注关键词
 - 精简_超频_docker容器 带docker容器 有超频 玩udp不建议选择这个
