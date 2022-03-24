@@ -4,6 +4,9 @@
 rm -rf ./feeds/packages/admin/netdata
 svn co https://github.com/DHDAXCW/packages/branches/ok/admin/netdata ./feeds/packages/admin/netdata
 
+# Add-rk3399 CPU resources
+wget -P ./target/linux/rockchip/patches-5.4 https://raw.githubusercontent.com/DHDAXCW/rk3399-nat-cpu-patch/main/993-cpu-nat.patch
+
 # Add cpufreq
 rm -rf ./feeds/luci/applications/luci-app-cpufreq 
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-cpufreq ./feeds/luci/applications/luci-app-cpufreq
