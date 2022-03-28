@@ -13,6 +13,7 @@ wget -O "/etc/apt/trusted.gpg.d/openmediavault-archive-keyring.asc" https://pack
 apt-key add "/etc/apt/trusted.gpg.d/openmediavault-archive-keyring.asc"
 ``
 添加软件包存储库：
+``
 ` cat <<EOF >> /etc/apt/sources.list.d/openmediavault.list`
 ` deb https://packages.openmediavault.org/public usul main`
 ` # deb https://downloads.sourceforge.net/project/openmediavault/packages usul main`
@@ -24,6 +25,7 @@ apt-key add "/etc/apt/trusted.gpg.d/openmediavault-archive-keyring.asc"
 ` # deb https://packages.openmediavault.org/public usul partner`
 ` # deb https://downloads.sourceforge.net/project/openmediavault/packages usul partner`
 ` EOF`
+``
 
 笔记
 
