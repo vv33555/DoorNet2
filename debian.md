@@ -13,25 +13,24 @@ wget -O "/etc/apt/trusted.gpg.d/openmediavault-archive-keyring.asc" https://pack
 apt-key add "/etc/apt/trusted.gpg.d/openmediavault-archive-keyring.asc"
 ``
 添加软件包存储库：
-`
-`` cat <<EOF >> /etc/apt/sources.list.d/openmediavault.list``
-`` deb https://packages.openmediavault.org/public usul main``
-`` # deb https://downloads.sourceforge.net/project/openmediavault/packages usul main``
-`` ## Uncomment the following line to add software from the proposed repository.``
-`` # deb https://packages.openmediavault.org/public usul-proposed main``
-`` # deb https://downloads.sourceforge.net/project/openmediavault/packages usul-proposed main``
-`` ## This software is not part of OpenMediaVault, but is offered by third-party``
-`` ## developers as a service to OpenMediaVault users.``
-`` # deb https://packages.openmediavault.org/public usul partner``
-`` # deb https://downloads.sourceforge.net/project/openmediavault/packages usul partner``
-`` EOF
-`
+` cat <<EOF >> /etc/apt/sources.list.d/openmediavault.list`
+` deb https://packages.openmediavault.org/public usul main`
+` # deb https://downloads.sourceforge.net/project/openmediavault/packages usul main`
+` ## Uncomment the following line to add software from the proposed repository.`
+` # deb https://packages.openmediavault.org/public usul-proposed main`
+` # deb https://downloads.sourceforge.net/project/openmediavault/packages usul-proposed main`
+` ## This software is not part of OpenMediaVault, but is offered by third-party`
+` ## developers as a service to OpenMediaVault users.`
+` # deb https://packages.openmediavault.org/public usul partner`
+` # deb https://downloads.sourceforge.net/project/openmediavault/packages usul partner`
+` EOF`
+
 笔记
 
 如果是中国大陆用户，TUNA 提供镜像服务。
 
 安装 openmediavault 包：
-``
+`
 export LANG=C.UTF-8
 export DEBIAN_FRONTEND=noninteractive
 export APT_LISTCHANGES_FRONTEND=none
@@ -44,4 +43,4 @@ apt-get --yes --auto-remove --show-upgraded \
     install openmediavault-keyring openmediavault
 
 omv-confdbadm populate
-``
+`
