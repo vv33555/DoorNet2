@@ -4,37 +4,43 @@
 
 在 ARM 设备上检查是否有合适的Armbian Buster (Debian 10) 映像可用。安装 Armbian 后，使用 armbian-config工具一步安装 OMV，其中包括所有性能和可靠性调整。如果您的设备没有 Armbian，只需按照下面概述的步骤操作即可。
 
-在Raspberry Pi OS上，以下说明仅部分有效。请参考具体的安装脚本
+在doornet2 debian上，以下说明仅部分有效。请参考具体的安装脚本
 
 手动安装 openmediavault 密钥环：
-``
+```bash
 apt-get install --yes gnupg
+
 wget -O "/etc/apt/trusted.gpg.d/openmediavault-archive-keyring.asc" https://packages.openmediavault.org/public/archive.key
+
 apt-key add "/etc/apt/trusted.gpg.d/openmediavault-archive-keyring.asc"
-``
+
+```
+
 添加软件包存储库：
-`
+
+```bash
 cat <<EOF >> /etc/apt/sources.list.d/openmediavault.list
 
 deb https://packages.openmediavault.org/public usul main
 
-`# deb https://downloads.sourceforge.net/project/openmediavault/packages usul main
+# deb https://downloads.sourceforge.net/project/openmediavault/packages usul main
 
-`## Uncomment the following line to add software from the proposed repository.
+## Uncomment the following line to add software from the proposed repository.
 
-`# deb https://packages.openmediavault.org/public usul-proposed main
+# deb https://packages.openmediavault.org/public usul-proposed main
 
-`# deb https://downloads.sourceforge.net/project/openmediavault/packages usul-proposed main
+# deb https://downloads.sourceforge.net/project/openmediavault/packages usul-proposed main
 
-`## This software is not part of OpenMediaVault, but is offered by third-party
+## This software is not part of OpenMediaVault, but is offered by third-party
 
-`## developers as a service to OpenMediaVault users.
+## developers as a service to OpenMediaVault users.
 
-`# deb https://packages.openmediavault.org/public usul partner
+# deb https://packages.openmediavault.org/public usul partner
 
-`# deb https://downloads.sourceforge.net/project/openmediavault/packages usul partner
+# deb https://downloads.sourceforge.net/project/openmediavault/packages usul partner
 
-EOF`
+EOF
+```
 
 笔记
 
