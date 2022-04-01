@@ -1,4 +1,4 @@
-name: DoorNet2_overwall
+name: DoorNet2_bate
 
 on:
   repository_dispatch:
@@ -22,7 +22,7 @@ env:
 
 jobs:
   Build:
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
     if: github.repository == 'DHDAXCW/DoorNet2'
     outputs:
       OPENWRTROOT: ${{ steps.update.outputs.OPENWRTROOT }}
@@ -62,13 +62,13 @@ jobs:
         git config --global user.email "git@github.com"
         git config --global user.name "GitHub"
         git clone $REPO_URL -b $REPO_BRANCH openwrt
-        svn co https://github.com/small-5/Openwrt-Compile/trunk/Small_5/package/ipk/luci-app-overwall package/lean/luci-app-overwall
+        
     - name: Cache
       uses: klever1988/cachewrtbuild@main
       with:
         ccache: 'true'
         prefix: ${{ github.workspace }}/openwrt
-        clean: 'false'
+        clean: 'true'
 
     - name: Update Feeds
       id: update
@@ -191,7 +191,7 @@ jobs:
         
   Upload:
     needs: [Build]
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
     if: github.repository == 'DHDAXCW/DoorNet2'
     steps:
       - name: Checkout
