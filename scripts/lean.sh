@@ -44,10 +44,6 @@ git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblocknetea
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
 
-# Add mentohust & luci-app-mentohust
-git clone --depth=1 https://github.com/BoringCat/luci-app-mentohust
-git clone --depth=1 https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk
-
 # Add luci-proto-minieap
 git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
 
@@ -110,7 +106,7 @@ git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 # svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl88x2bu
 
 # Add luci-app-smartdns & smartdns
-svn co https://github.com/281677160/openwrt-package/trunk/feeds/luci/applications/luci-app-smartdns
+svn co https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns
 
 # Add luci-app-services-wolplus
 svn co https://github.com/msylgj/OpenWrt_luci-app/trunk/luci-app-services-wolplus
@@ -215,7 +211,7 @@ sed -i "s/OpenWrt /DHDAXCW @ FusionWrt /g" package/lean/default-settings/files/z
 # find package/*/ feeds/*/ -maxdepth 6 -path "*luci-app-smartdns/luasrc/controller/smartdns.lua" | xargs -i sed -i 's/\"SmartDNS\")\, 4/\"SmartDNS\")\, 3/g' {} 
 
 # Test kernel 5.4
-sed -i 's/5.15/5.4/g' target/linux/rockchip/Makefile
+# sed -i 's/5.15/5.4/g' target/linux/rockchip/Makefile
 
 # upgrade the kernel
 #pushd include
