@@ -12,8 +12,11 @@ sed -i 's,1608,1800,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-def
 sed -i 's,2016,2208,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-defaults/cpufreq
 sed -i 's,1512,1608,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-defaults/cpufreq
 rm -rf ./target/linux/rockchip/armv8/base-files/etc/hotplug.d
-rm -rf ./package/kernel/linux/modules/fs.mk
-wget -P ./package/kernel/linux/modules https://raw.githubusercontent.com/LPDDR6-10000MHz/lede/mask/package/kernel/linux/modules/fs.mk
+pushd target/linux/rockchip/image
+rm -rf armv8.mk
+wget https://raw.githubusercontent.com/DHDAXCW/lede/master/target/linux/rockchip/image/armv8.mk
+popd
+
 # Clone community packages to package/community
 mkdir package/community
 pushd package/community
