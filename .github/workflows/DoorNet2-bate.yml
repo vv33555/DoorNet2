@@ -90,6 +90,7 @@ jobs:
       run: |
         cd $OPENWRTROOT
         ./scripts/feeds install -a
+        
     - name: Load Custom Configuration
       run: |
         [ -e files ] && mv files $OPENWRTROOT/files
@@ -100,11 +101,11 @@ jobs:
         ../scripts/preset-clash-core.sh armv8
         ../scripts/preset-terminal-tools.sh
         make defconfig
+        
     - name: Download Package
       id: package
       run: |
         cd $OPENWRTROOT
-        ../scripts/modify_config.sh
         cat .config
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
