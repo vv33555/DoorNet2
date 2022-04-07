@@ -13,16 +13,14 @@ env:
   REPO_BRANCH: master
   CONFIG_FILE: configs/lean/lean-s.config
   DIY_SH: scripts/lean.sh
-  IPV6MOD_IN_FIRMWARE: true
   KMODS_IN_FIRMWARE: true
   UPLOAD_WETRANSFER: true
-  UPLOAD_COWTRANSFER: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
 jobs:
   Build:
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
     if: github.repository == 'DHDAXCW/DoorNet2'
     outputs:
       OPENWRTROOT: ${{ steps.update.outputs.OPENWRTROOT }}
@@ -184,7 +182,7 @@ jobs:
         
   Upload:
     needs: [Build]
-    runs-on: ubuntu-20.04
+    runs-on: self-hosted
     if: github.repository == 'DHDAXCW/DoorNet2'
     steps:
       - name: Checkout
