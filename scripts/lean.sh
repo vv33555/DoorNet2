@@ -156,22 +156,10 @@ export date_version=$(date -d "$(rdate -n -4 -p ntp.aliyun.com)" +'%Y-%m-%d')
 sed -i "s/${orig_version}/${orig_version} (${date_version})/g" zzz-default-settings
 popd
 
-# Fix libssh
-# pushd feeds/packages/libs
-# rm -rf libssh
-# svn co https://github.com/openwrt/packages/trunk/libs/libssh
-# popd
-
 # Use Lienol's https-dns-proxy package
 pushd feeds/packages/net
 rm -rf https-dns-proxy
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy
-popd
-
-# Use snapshots syncthing package
-pushd feeds/packages/utils
-rm -rf syncthing
-svn co https://github.com/openwrt/packages/trunk/utils/syncthing
 popd
 
 # Fix mt76 wireless driver
@@ -185,25 +173,6 @@ pushd po2lmo
 make && sudo make install
 popd
 
-# rm -rf ./package/kernel/linux/modules/video.mk
-# wget -P package/kernel/linux/modules/ https://github.com/immortalwrt/immortalwrt/raw/master/package/kernel/linux/modules/video.mk
-
-# Save Ethernet MAC address to eMMC/TF
-pushd target/linux/rockchip/armv8/base-files/etc/board.d
-rm -rf 02_network
-wget https://raw.githubusercontent.com/DHDAXCW/RK356X/master/target/linux/rockchip/armv8/base-files/etc/board.d/02_network
-popd
-
-# Generic for the device tree
-#pushd target/linux/rockchip/patches-5.4
-#cp -f $GITHUB_WORKSPACE/scripts/patchs/996-Generic-for-the-device-tree.patch 996-Generic-for-the-device-tree.patch
-#popd
-
-# Priority SD u boot
-#pushd package/boot/uboot-rockchip/patches
-#cp -f $GITHUB_WORKSPACE/scripts/patchs/106-rockchip-rk3399-Priority-SD-boot.patch 106-rockchip-rk3399-Priority-SD-boot.patch
-#popd
-
 # Change default shell to zsh
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
@@ -211,16 +180,9 @@ sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_generate
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='FusionWrt'' package/lean/default-settings/files/zzz-default-settings
 sed -i "s/OpenWrt /DHDAXCW @ FusionWrt /g" package/lean/default-settings/files/zzz-default-settings
-# find package/*/ feeds/*/ -maxdepth 6 -path "*luci-app-smartdns/luasrc/controller/smartdns.lua" | xargs -i sed -i 's/\"SmartDNS\")\, 4/\"SmartDNS\")\, 3/g' {} 
 
 # Test kernel 5.4
-sed -i 's/5.15/5.10/g' target/linux/rockchip/Makefile
-
-# upgrade the kernel
-#pushd include
-#rm -rf kernel-5.4
-#wget https://raw.githubusercontent.com/DHDAXCW/lede/master/include/kernel-5.4
-#popd
+# sed -i 's/5.15/5.10/g' target/linux/rockchip/Makefile
 
 # Custom configs
 # git am $GITHUB_WORKSPACE/patches/lean/*.patch
