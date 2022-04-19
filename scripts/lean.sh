@@ -24,6 +24,11 @@ popd
 mkdir package/community
 pushd package/community
 
+# Addd mosdns
+svn export https://github.com/QiuSimons/openwrt-mos/trunk/mosdns package/new/mosdns
+svn export https://github.com/QiuSimons/openwrt-mos/trunk/luci-app-mosdns package/new/luci-app-mosdns
+svn export https://github.com/QiuSimons/openwrt-mos/trunk/v2ray-geodata package/new/v2ray-geodata
+
 # Add Lienol's Packages
 git clone --depth=1 https://github.com/Lienol/openwrt-package
 rm -rf openwrt-package/verysync
