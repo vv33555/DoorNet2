@@ -12,6 +12,8 @@
 - 稳定版_默频 不含有超频，稳定性，发热极少
 - 全插件_默频 带有全插件，而且不超频，发热极少
 - 全插件_超频（推荐）满足全部要求，插件都有
+### 基于lede openwrt kernel 5.4内核固件下载
+- https://github.com/DHDAXCW/doornet2-5.4/releases
 ### 购买设备
 - 懂得openwrt玩法建议去买官网，小白不懂可以去下面其他商家，有售后支持。官网售后不懂。。。
 - BIGDONGDONG https://item.taobao.com/item.htm?spm=a230r.1.14.56.33e15e555hXDPd&id=670679179652
