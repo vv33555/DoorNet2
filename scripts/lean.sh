@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# fix netdata
-rm -rf ./feeds/packages/admin/netdata
-svn co https://github.com/DHDAXCW/packages/branches/ok/admin/netdata ./feeds/packages/admin/netdata
-
 # Add cpufreq
 rm -rf ./feeds/luci/applications/luci-app-cpufreq 
 svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-cpufreq ./feeds/luci/applications/luci-app-cpufreq
@@ -12,30 +8,26 @@ sed -i 's,1608,1800,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-def
 sed -i 's,2016,2208,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-defaults/cpufreq
 sed -i 's,1512,1608,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-defaults/cpufreq
 rm -rf ./target/linux/rockchip/armv8/base-files/etc/hotplug.d/usb
-pushd ./target/linux/rockchip/image
+pushd target/linux/rockchip/image
 rm -rf armv8.mk
 wget https://raw.githubusercontent.com/DHDAXCW/lede/master/target/linux/rockchip/image/armv8.mk
 popd
+
 # Clone community packages to package/community
 mkdir package/community
 pushd package/community
-
-# Add luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
 
 # Add Lienol's Packages
 git clone --depth=1 https://github.com/Lienol/openwrt-package
 rm -rf openwrt-package/verysync
 rm -rf openwrt-package/luci-app-verysync
 
-# Add luci-app-netdata
-rm -rf ../../customfeeds/luci/applications/luci-app-netdata
-git clone --depth=1 https://github.com/sirpdboy/luci-app-netdata
+# Add luci-app-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
 
 # Add luci-app-ssr-plus
 git clone --depth=1 https://github.com/fw876/helloworld
-# git clone --depth=1 https://github.com/DHDAXCW/helloworld
 
 # Add luci-app-unblockneteasemusic
 rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
@@ -52,8 +44,7 @@ git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
 # git clone --depth=1 https://github.com/garypang13/luci-app-bypass.git
 
 # Add OpenClash
-git clone --depth=1 -b master https://github.com/vernesong/OpenClash
-# git clone --depth=1 https://github.com/DHDAXCW/OpenClash
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 
 # Add luci-app-adguardhome
 svn co https://github.com/Lienol/openwrt-package/branches/other/luci-app-adguardhome
@@ -106,6 +97,9 @@ git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 # svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl8192eu
 # svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/rtl88x2bu
 
+# Add luci-app-smartdns & smartdns
+svn co https://github.com/281677160/openwrt-package/trunk/luci-app-smartdns
+
 # Add luci-app-services-wolplus
 svn co https://github.com/msylgj/OpenWrt_luci-app/trunk/luci-app-services-wolplus
 
@@ -147,14 +141,7 @@ pushd package/lean/default-settings/files
 sed -i '/http/d' zzz-default-settings
 sed -i '/18.06/d' zzz-default-settings
 export orig_version=$(cat "zzz-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')
-export date_version=$(date -d "$(rdate -n -4 -p ntp.aliyun.com)" +'%Y-%m-%d')
 sed -i "s/${orig_version}/${orig_version} (${date_version})/g" zzz-default-settings
-popd
-
-# Use Lienol's https-dns-proxy package
-pushd feeds/packages/net
-rm -rf https-dns-proxy
-svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy
 popd
 
 # Fix mt76 wireless driver
