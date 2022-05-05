@@ -117,13 +117,6 @@ svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/aliyundrive-
 svn co https://github.com/messense/aliyundrive-webdav/trunk/openwrt/luci-app-aliyundrive-webdav
 popd
 
-# 动态DNS
-git clone --depth 1 https://github.com/small-5/ddns-scripts-dnspod package/lean/ddns-scripts_dnspod
-git clone --depth 1 https://github.com/small-5/ddns-scripts-aliyun package/lean/ddns-scripts_aliyun
-svn co https://github.com/QiuSimons/OpenWrt_luci-app/trunk/luci-app-tencentddns ./package/lean/luci-app-tencentddns
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-aliddns ./feeds/luci/applications/luci-app-aliddns
-ln -sf ./feeds/luci/applications/luci-app-aliddns ./package/feeds/luci/luci-app-aliddns
-
 # Add Pandownload
 pushd package/lean
 svn co https://github.com/immortalwrt/packages/trunk/net/pandownload-fake-server
@@ -156,6 +149,11 @@ sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_generate
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='FusionWrt'' package/lean/default-settings/files/zzz-default-settings
 sed -i "s/OpenWrt /DHDAXCW @ FusionWrt /g" package/lean/default-settings/files/zzz-default-settings
+
+# remove some cores
+pushd target/linux/rockchip/patches-5.15
+cp -f $GITHUB_WORKSPACE/scripts/patchs/996-rk3399-opp.patch 996-rk3399-opp.patch
+popd
 
 # Test kernel 5.4
 # sed -i 's/5.15/5.4/g' target/linux/rockchip/Makefile
