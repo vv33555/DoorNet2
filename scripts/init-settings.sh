@@ -2,6 +2,9 @@
 # Set default theme to luci-theme-argon
 uci set luci.main.mediaurlbase='/luci-static/argon'
 
+# 禁用ipv6前缀
+sed -i 's/^[^#].*option ula/#&/' /etc/config/network
+
 # Disable opkg signature check
 # sed -i 's/option check_signature/# option check_signature/g' /etc/opkg.conf
 
