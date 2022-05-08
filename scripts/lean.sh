@@ -152,7 +152,7 @@ sed -i "s/OpenWrt /DHDAXCW @ FusionWrt /g" package/lean/default-settings/files/z
 
 # remove some cores
 pushd target/linux/rockchip/patches-5.15
-cp -f $GITHUB_WORKSPACE/scripts/patchs/996-rk3399-opp.patch 996-rk3399-opp.patch
+cp -f $GITHUB_WORKSPACE/scripts/patchs/994-wode.patch 994-wode.patch
 popd
 
 # Test kernel 5.4
