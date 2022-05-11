@@ -155,8 +155,8 @@ pushd target/linux/rockchip/patches-5.15
 cp -f $GITHUB_WORKSPACE/scripts/patchs/994-wode.patch 994-wode.patch
 popd
 
-# Test kernel 5.4
-# sed -i 's/5.15/5.4/g' target/linux/rockchip/Makefile
+rm -rf package/kernel/mac80211
+svn co https://github.com/openwrt/openwrt/trunk/package/kernel/mac80211 package/kernel/mac80211
 
 # Custom configs
 # git am $GITHUB_WORKSPACE/patches/lean/*.patch
