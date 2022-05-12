@@ -155,6 +155,7 @@ pushd target/linux/rockchip/patches-5.15
 cp -f $GITHUB_WORKSPACE/scripts/patchs/994-wode.patch 994-wode.patch
 popd
 
+sed -i 's/5.15/5.4/g' target/linux/rockchip/Makefile
 # 删除定时coremark
 rm -rf ./customfeeds/packages/utils/coremark
 svn co https://github.com/DHDAXCW/packages/trunk/utils/coremark customfeeds/packages/utils/coremark
