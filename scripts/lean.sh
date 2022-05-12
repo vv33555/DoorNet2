@@ -158,6 +158,9 @@ popd
 rm -rf package/kernel/mac80211
 svn co https://github.com/openwrt/openwrt/trunk/package/kernel/mac80211 package/kernel/mac80211
 
+# 删除定时coremark
+rm -rf ./customfeeds/packages/utils/coremark/coremark
+
 # Custom configs
 # git am $GITHUB_WORKSPACE/patches/lean/*.patch
 # git am $GITHUB_WORKSPACE/patches/*.patch
