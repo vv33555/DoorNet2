@@ -8,10 +8,6 @@ sed -i 's,1608,1800,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-def
 sed -i 's,2016,2208,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-defaults/10-cpufreq
 sed -i 's,1512,1608,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-defaults/10-cpufreq
 rm -rf ./target/linux/rockchip/armv8/base-files/etc/hotplug.d/usb
-pushd target/linux/rockchip/image
-rm -rf armv8.mk
-wget https://raw.githubusercontent.com/DHDAXCW/lede/master/target/linux/rockchip/image/armv8.mk
-popd
 
 # Clone community packages to package/community
 mkdir package/community
@@ -156,6 +152,9 @@ cp -f $GITHUB_WORKSPACE/scripts/patchs/994-wode.patch 994-wode.patch
 popd
 
 sed -i 's/5.15/5.4/g' target/linux/rockchip/Makefile
+
+rm -rf package/libs/wolfssl
+svn co https://github.com/Boos4721/openwrt/trunk/package/libs/wolfssl package/libs/wolfssl
 
 # 删除定时coremark
 rm -rf ./customfeeds/packages/utils/coremark
