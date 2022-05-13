@@ -155,6 +155,9 @@ sed -i 's/5.15/5.4/g' target/linux/rockchip/Makefile
 
 rm -rf package/libs/wolfssl
 svn co https://github.com/Boos4721/openwrt/trunk/package/libs/wolfssl package/libs/wolfssl
+rm -rf package/kernel/mac80211
+svn co https://github.com/Boos4721/openwrt/trunk/package/kernel/mac80211 package/kernel/mac80211
+
 
 # 删除定时coremark
 rm -rf ./customfeeds/packages/utils/coremark
