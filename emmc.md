@@ -11,12 +11,6 @@
 
 ## 通过EMMC启动
 
-### 推荐方法进入maskrom模式
-- 终端命令
-- ```bash dd if=/dev/zero of=/dev/mmcblk0 bs=8M count=1``` 
-- 然后```bash reboot```，10秒后，拔电，上电ok 然后软件就识别maskrom模式
-
-
 ### 准备工作
 - 👉👉👉[点击蓝色--看刷机教程一下，再操作！！！！](https://www.bilibili.com/video/BV133411n7oq)👈👈👈
 - 访问下载地址，同时提供了系统镜像和烧录工具，下载烧录工具和相应的系统镜像：
@@ -33,6 +27,12 @@
 （如果以前安装过旧版本的驱动，先点击驱动卸载，卸载旧版本的驱动程序。若未安装过可以忽略这一步骤。）
 - 点击驱动安装，安装驱动程序。弹出驱动安装成功的界面，点击确定完成驱动安装。
 ![image](https://user-images.githubusercontent.com/74764072/142338797-fc6dc321-8983-4731-b3ba-6aa4efcf224a.png)
+
+### 推荐方法进入maskrom模式
+- 终端TTYD命令
+- ```bash dd if=/dev/zero of=/dev/mmcblk0 bs=8M count=1``` 
+- 然后```bash reboot```，10秒后，拔电，上电ok 然后软件就识别maskrom模式 
+
 
 ### 安装烧录工具
 - 下载烧录软件：[RKDevTool_Release_v2.84](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/RKDevTool_Release_v2.84.zip)，使用压缩工具解压 RKDevTool_Release_v2.84.zip 到任意路径下，由于烧录工具是无需安装的，解压完成即可
