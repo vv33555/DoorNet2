@@ -30,8 +30,8 @@
 
 ### 推荐方法进入maskrom模式
 - 终端TTYD命令
-- ```bash dd if=/dev/zero of=/dev/mmcblk0 bs=8M count=1``` 
-- 然后```bash reboot```，10秒后，拔电，上电ok 然后软件就识别maskrom模式 
+- ```dd if=/dev/zero of=/dev/mmcblk0 bs=8M count=1``` 
+- 然后```reboot```，10秒后，拔电，上电ok 然后软件就识别maskrom模式 
 
 
 ### 安装烧录工具
