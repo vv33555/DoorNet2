@@ -11,7 +11,7 @@ on:
 env:
   REPO_URL: https://github.com/Boos4721/openwrt
   REPO_BRANCH: master
-  CONFIG_FILE: configs/lean/boos.config
+  CONFIG_FILE: configs/boos/boos-s.config
   DIY_SH: scripts/lean.sh
   KMODS_IN_FIRMWARE: true
   UPLOAD_RELEASE: true
