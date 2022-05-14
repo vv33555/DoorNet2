@@ -10,6 +10,8 @@ rm -rf package/base-files/files/etc/shadow
 wget -P package/base-files/files/etc https://raw.githubusercontent.com/DHDAXCW/openwrt/master/package/base-files/files/etc/shadow
 rm -rf package/network/services/dnsmasq/files/dhcp.conf
 wget -P package/network/services/dnsmasq/files https://raw.githubusercontent.com/DHDAXCW/openwrt/master/package/network/services/dnsmasq/files/dhcp.conf
+rm -rf package/kernel/mac80211
+svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/kernel/mac80211 package/kernel/mac80211
 
 # rtl8821cu
 svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
