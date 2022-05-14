@@ -12,7 +12,7 @@ rm -rf package/network/services/dnsmasq/files/dhcp.conf
 wget -P package/network/services/dnsmasq/files https://raw.githubusercontent.com/DHDAXCW/openwrt/master/package/network/services/dnsmasq/files/dhcp.conf
 
 # rtl8821cu
-svn co https://github.com/LPDDR6-10000MHz/lede/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
+svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
 
 # Add luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
