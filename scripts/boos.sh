@@ -16,6 +16,9 @@ svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/pa
 # rtl8821cu
 svn co https://github.com/LubanCat/DoorNet-OpenWrt/trunk/package/kernel/rtl8821cu package/kernel/rtl8821cu
 
+# Add luci-app-bypass
+git clone --depth=1 https://github.com/garypang13/luci-app-bypass.git package/lean/luci-app-bypass
+
 # Add OpenClash
 rm -rf customfeeds/luci/
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
