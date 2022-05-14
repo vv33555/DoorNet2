@@ -1,7 +1,5 @@
 #!/bin/bash
 
-rm -rf package/lean/default-settings/files/zzz-default-settings
-wget -P package/lean/default-settings/files https://raw.githubusercontent.com/DHDAXCW/openwrt/master/package/lean/default-settings/files/zzz-default-settings
 pushd customfeeds
 
 # Add luci-app-eqos
