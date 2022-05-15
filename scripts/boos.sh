@@ -21,6 +21,7 @@ rm -rf feeds/Boos/luci-app-bypass
 git clone --depth=1 https://github.com/garypang13/luci-app-bypass.git package/lean/luci-app-bypass
 
 # Add OpenClash
+rm -rf package/feeds/Boos/luci-app-clash
 rm -rf feeds/Boos/luci-app-clash
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/lean/luci-app-openclash
 
