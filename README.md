@@ -5,7 +5,6 @@
 ### 注：不要用恢复备份。。不保证某个插件是否正常运行。。。建议重新设置贼好！
 
 ### 默认编译  
-<img src="https://tool.lu/netcard/">
 - 用户名：root 密码：password  管理IP：192.168.11.1
 - 下载地址： https://github.com/DHDAXCW/DoorNet2/releases
 ### 固件分类 在[releases](https://github.com/DHDAXCW/DoorNet2/releases)有备注关键词
