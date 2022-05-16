@@ -1,4 +1,4 @@
-name: DoorNet2_beggar
+name: lean_beggar
 
 on:
   repository_dispatch:
