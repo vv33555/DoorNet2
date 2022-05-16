@@ -1,4 +1,4 @@
-name: DoorNet2_Lite
+name: lean-Lite
 
 on:
   repository_dispatch:
