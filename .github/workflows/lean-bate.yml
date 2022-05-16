@@ -1,4 +1,4 @@
-name: DoorNet2_bate
+name: lean_bate
 
 on:
   repository_dispatch:
