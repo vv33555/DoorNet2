@@ -12,8 +12,9 @@
 ## 通过EMMC启动
 
 ### 准备工作
--       👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+      👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
 - 👉👉👉[点击蓝色--看刷机教程一下，再操作！！！！](https://www.bilibili.com/video/BV133411n7oq)👈👈👈
+       👆👆👆👆👆👆👆👆👆👆👆👆👆👆👆👆👆👆👆👆👆👆
 - 访问下载地址，同时提供了系统镜像和烧录工具，下载烧录工具和相应的系统镜像：
 - 双公头USB线一根，用于在PC和DoorNet2之间传输数据
 - 驱动程序：[DriverAssitant_v5.1.1](https://github.com/DHDAXCW/DHDAXCW/releases/download/doornet2/DriverAssitant_v5.1.1.zip)  仅支持Windows11以下，不支持Mac SO
