@@ -57,8 +57,5 @@ sed -i "s/OpenWrt /DHDAXCW @ FusionWrt /g" package/lean/default-settings/files/z
 # 删除定时coremark
 rm -rf ./customfeeds/packages/utils/coremark
 svn co https://github.com/DHDAXCW/packages/trunk/utils/coremark customfeeds/packages/utils/coremark
-pushd target/linux/rockchip/patches-5.10
-cp -f $GITHUB_WORKSPACE/scripts/patchs/994-rockchip-rk3399-thermal-zone0-temperature-set.patch 994-rockchip-rk3399-thermal-zone0-temperature-set.patch
-popd
 
 echo -e " DHDAXCW's FusionWrt built on "$(date +%Y.%m.%d)"\n -----------------------------------------------------" >> package/base-files/files/etc/banner
