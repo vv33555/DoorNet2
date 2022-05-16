@@ -43,8 +43,8 @@ rm -rf feeds/Boos/v2ray-geodata
 rm -rf feeds/Boos/v2ray-plugin
 rm -rf feeds/Boos/xray-core
 rm -rf feeds/Boos/xray-plugin
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
+git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/lean/openwrt-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/lean/luci-app-passwall
 
 # Add OpenClash
 rm -rf package/feeds/Boos/luci-app-clash
