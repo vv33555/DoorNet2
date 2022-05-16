@@ -1,4 +1,4 @@
-name: DoorNet2_boos_overclock
+name: boos-overclock
 
 on:
   repository_dispatch:
