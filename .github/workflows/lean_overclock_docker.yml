@@ -1,4 +1,4 @@
-name: DoorNet2_overclock_docker
+name: lean_overclock_docker
 
 on:
   repository_dispatch:
