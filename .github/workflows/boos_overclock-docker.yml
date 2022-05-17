@@ -1,4 +1,4 @@
-name: boos-overclock
+name: boos-overclock-docker
 
 on:
   repository_dispatch:
