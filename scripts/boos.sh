@@ -26,8 +26,6 @@ svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/l
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/lean/luci-app-argon-config
 rm -rf customfeeds/luci/themes/luci-theme-argon
-rm -rf customfeeds/luci/themes/luci-theme-argon-lr
-rm -rf package/feeds/Boos/luci-theme-argon-lr
 rm -rf package/lean/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 cp -f $GITHUB_WORKSPACE/data/bg1.jpg package/lean/luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
