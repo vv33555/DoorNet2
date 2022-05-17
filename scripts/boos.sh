@@ -16,37 +16,6 @@ svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/pa
 rm -rf package/kernel/rtl8821cu
 svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8821cu package/kernel/rtl8821cu
 
-# Add luci-app-bypass
-rm -rf feeds/Boos/luci-app-bypass
-git clone --depth=1 https://github.com/garypang13/luci-app-bypass.git package/lean/luci-app-bypass
-
-# Add luci-app-passwall
-rm -rf feeds/Boos/brook
-rm -rf feeds/Boos/chinadns-ng
-rm -rf feeds/Boos/dns2socks
-rm -rf feeds/Boos/dns2tcp
-rm -rf feeds/Boos/hysteria
-rm -rf feeds/Boos/ipt2socks
-rm -rf feeds/Boos/microsocks
-rm -rf feeds/Boos/naiveproxy
-rm -rf feeds/Boos/pdnsd-alt
-rm -rf feeds/Boos/shadowsocks-rust
-rm -rf feeds/Boos/shadowsocksr-libev
-rm -rf feeds/Boos/simple-obfs
-rm -rf feeds/Boos/ssocks
-rm -rf feeds/Boos/tcping
-rm -rf feeds/Boos/trojan-go
-rm -rf feeds/Boos/trojan-plus
-rm -rf feeds/Boos/trojan
-rm -rf feeds/Boos/v2ray-core
-rm -rf feeds/Boos/v2ray-geodata
-rm -rf feeds/Boos/v2ray-plugin
-rm -rf feeds/Boos/xray-core
-rm -rf feeds/Boos/xray-plugin
-rm -rf feeds/Boos/luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/lean/openwrt-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/lean/luci-app-passwall
-
 # Add OpenClash
 rm -rf package/feeds/Boos/luci-app-clash
 rm -rf feeds/Boos/luci-app-clash
