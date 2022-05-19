@@ -11,6 +11,9 @@ wget -P package/base-files/files/etc https://raw.githubusercontent.com/DHDAXCW/o
 rm -rf package/network/services/dnsmasq/files/dhcp.conf
 wget -P package/network/services/dnsmasq/files https://raw.githubusercontent.com/DHDAXCW/openwrt/master/package/network/services/dnsmasq/files/dhcp.conf
 
+rm -rf package/kernel/mac80211
+svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/mac80211 package/kernel/mac80211
+
 # rtl8821cu
 rm -rf package/kernel/rtl8821cu
 svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8821cu package/kernel/rtl8821cu
