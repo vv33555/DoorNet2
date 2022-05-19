@@ -11,10 +11,6 @@ wget -P package/base-files/files/etc https://raw.githubusercontent.com/DHDAXCW/o
 rm -rf package/network/services/dnsmasq/files/dhcp.conf
 wget -P package/network/services/dnsmasq/files https://raw.githubusercontent.com/DHDAXCW/openwrt/master/package/network/services/dnsmasq/files/dhcp.conf
 
-# rtl8821cu
-rm -rf package/kernel/rtl8821cu
-svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8821cu package/kernel/rtl8821cu
-
 # Add OpenClash
 rm -rf package/feeds/Boos/luci-app-clash
 rm -rf feeds/Boos/luci-app-clash
