@@ -142,8 +142,11 @@ sed -i "s/OpenWrt /DHDAXCW @ FusionWrt /g" package/lean/default-settings/files/z
 
 sed -i 's/5.15/5.4/g' target/linux/rockchip/Makefile
 
-rm -rf package/libs/wolfssl
-svn co https://github.com/Boos4721/openwrt/trunk/package/libs/wolfssl package/libs/wolfssl
+rm -rf package/kernel/mac80211
+svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/mac80211 package/kernel/mac80211
+# rtl8821cu
+rm -rf package/kernel/rtl8821cu
+svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8821cu package/kernel/rtl8821cu
 
 # 删除定时coremark
 rm -rf ./customfeeds/packages/utils/coremark
