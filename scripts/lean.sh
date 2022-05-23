@@ -9,7 +9,7 @@ sed -i 's,2016,2208,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-def
 sed -i 's,1512,1608,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-defaults/10-cpufreq
 rm -rf ./target/linux/rockchip/armv8/base-files/etc/hotplug.d/usb
 
-rm -rf package/kernel/r8168
+rm -rf package/lean/r8168
 git clone https://github.com/DHDAXCW/r8168 package/kernel/r8168
 
 # Clone community packages to package/community
