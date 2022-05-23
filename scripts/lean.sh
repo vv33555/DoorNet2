@@ -143,15 +143,6 @@ sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_genera
 sed -i '/uci commit system/i\uci set system.@system[0].hostname='FusionWrt'' package/lean/default-settings/files/zzz-default-settings
 sed -i "s/OpenWrt /DHDAXCW @ FusionWrt /g" package/lean/default-settings/files/zzz-default-settings
 
-sed -i 's/5.15/5.4/g' target/linux/rockchip/Makefile
-
-rm -rf package/kernel/mac80211
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/mac80211 package/kernel/mac80211
-# rtl8821cu
-rm -rf package/kernel/rtl8821cu
-svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8821cu package/kernel/rtl8821cu
-rm -rf package/libs/wolfssl
-svn co https://github.com/Boos4721/openwrt/trunk/package/libs/wolfssl package/libs/wolfssl
 # 删除定时coremark
 rm -rf ./customfeeds/packages/utils/coremark
 svn co https://github.com/DHDAXCW/packages/trunk/utils/coremark customfeeds/packages/utils/coremark
