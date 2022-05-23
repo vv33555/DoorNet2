@@ -147,7 +147,8 @@ svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/pa
 # rtl8821cu
 rm -rf package/kernel/rtl8821cu
 svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/kernel/rtl8821cu package/kernel/rtl8821cu
-
+rm -rf package/libs/wolfssl
+svn co https://github.com/Boos4721/openwrt/trunk/package/libs/wolfssl package/libs/wolfssl
 # 删除定时coremark
 rm -rf ./customfeeds/packages/utils/coremark
 svn co https://github.com/DHDAXCW/packages/trunk/utils/coremark customfeeds/packages/utils/coremark
