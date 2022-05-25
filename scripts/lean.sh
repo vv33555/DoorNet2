@@ -8,11 +8,10 @@ sed -i 's,1608,1800,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-def
 sed -i 's,2016,2208,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-defaults/10-cpufreq
 sed -i 's,1512,1608,g' feeds/luci/applications/luci-app-cpufreq/root/etc/uci-defaults/10-cpufreq
 rm -rf ./target/linux/rockchip/armv8/base-files/etc/hotplug.d/usb
+rm -rf package/kernel/mac80211
+svn co https://github.com/immortalwrt/immortalwrt/trunk/package/kernel/mac80211 package/kernel/mac80211
 
-rm -rf package/lean/r8168
-git clone https://github.com/DHDAXCW/r8168 package/kernel/r8168
-
-# Clone community packages to package/community
+# Clone community packages
 mkdir package/community
 pushd package/community
 
