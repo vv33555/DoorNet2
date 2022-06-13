@@ -1,3 +1,0 @@
-#!/bin/sh
-
-[ "$SUBSYSTEM" = android_usb -a "$ACTION" = change  ] && /usr/bin/usbdevice "$DEVPATH" "$USB_STATE"
