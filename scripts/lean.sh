@@ -1,4 +1,11 @@
 #!/bin/bash
+#=================================================
+# System Required: Linux
+# Version: 1.0
+# Lisence: MIT
+# Author: SuLingGG
+# Blog: https://mlapp.cn
+#=================================================
 
 # Add cpufreq
 rm -rf ./feeds/luci/applications/luci-app-cpufreq 
