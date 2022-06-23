@@ -33,6 +33,9 @@ git clone --depth=1 https://github.com/Lienol/openwrt-package
 rm -rf openwrt-package/verysync
 rm -rf openwrt-package/luci-app-verysync
 
+# Add luci-app-adguardhome
+svn co https://github.com/Boos4721/OpenWrt-Packages/trunk/luci-app-adguardhome
+
 # Add luci-app-passwall
 git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
@@ -55,14 +58,11 @@ git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
 # Add OpenClash
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
 
-# Add luci-app-adguardhome
-svn co https://github.com/Lienol/openwrt-package/branches/other/luci-app-adguardhome
-
 # Add ddnsto & linkease
-svn co https://github.com/DHDAXCW/nas-packages-luci/trunk/luci/luci-app-ddnsto
-svn co https://github.com/DHDAXCW/nas-packages-luci/trunk/luci/luci-app-linkease
-svn co https://github.com/DHDAXCW/nas-packages/trunk/network/services/ddnsto
-svn co https://github.com/DHDAXCW/nas-packages/trunk/network/services/linkease
+svn co https://github.com/linkease/nas-packages-luci/trunk/luci/luci-app-ddnsto
+svn co https://github.com/linkease/nas-packages-luci/trunk/luci/luci-app-linkease
+svn co https://github.com/linkease/nas-packages/trunk/network/services/ddnsto
+svn co https://github.com/linkease/nas-packages/trunk/network/services/linkease
 
 # Add luci-app-onliner (need luci-app-nlbwmon)
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
