@@ -14,7 +14,7 @@
 /dts-v1/;
 #include <dt-bindings/input/linux-event-codes.h>
 #include "rk3399.dtsi"
-#include "rk3399-nanopi4-opp.dtsi"
+#include "rk3399-op1-opp.dtsi"
 
 / {
 	aliases {
