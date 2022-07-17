@@ -47,6 +47,9 @@ git clone --depth=1 https://github.com/DHDAXCW/helloworld
 rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
 
+# alist
+git clone https://github.com/sbwml/openwrt-alist --depth=1
+
 # Add luci-app-vssr <M>
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
 git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr
