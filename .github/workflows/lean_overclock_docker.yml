@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: lean_overclock_docker
+name: lean_容器
 
 on:
   repository_dispatch:
