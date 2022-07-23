@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: lean_beggar
+name: lean_乞丐
 
 on:
   repository_dispatch:
