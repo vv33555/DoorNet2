@@ -26,7 +26,7 @@
 # 系统截图
 ![image](https://user-images.githubusercontent.com/74764072/183226910-093c471a-5213-4a59-ab9d-63b85f650afe.png)
 
-![image](https://user-images.githubusercontent.com/74764072/150896121-f24cd658-2a9f-49d0-9e88-ceaedd1bc67f.png)
+![image](https://user-images.githubusercontent.com/74764072/183227241-cd4f960f-8fd3-4791-ab1d-45f552da6f85.png)
 
 ![image](https://user-images.githubusercontent.com/74764072/150896194-92269903-6865-40aa-b227-d068ae067510.png)
 
