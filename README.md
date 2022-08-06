@@ -36,6 +36,9 @@
 
 ![image](https://user-images.githubusercontent.com/74764072/183227320-83adacd4-0720-4962-9dd9-53795c63c2cd.png)
 
+### 无线
+
+ ![image](https://user-images.githubusercontent.com/74764072/183230745-a24311e1-e588-49cd-8066-accd2884ff84.png) 
 
 ## 提示
  - 如果感觉很热  就加风扇，推荐 风扇6cm×6cm，薄1cm，usb也行 或者1.25排针
