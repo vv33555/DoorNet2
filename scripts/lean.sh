@@ -23,6 +23,9 @@ svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/pa
 rm -rf package/kernel/mwlwifi
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-18.06-k5.4/package/kernel/mwlwifi package/kernel/mwlwifi
 
+# alist
+git clone https://github.com/sbwml/luci-app-alist package/alist
+
 # Clone community packages
 mkdir package/community
 pushd package/community
@@ -46,9 +49,6 @@ git clone --depth=1 https://github.com/DHDAXCW/helloworld
 # Add luci-app-unblockneteasemusic
 rm -rf ../../customfeeds/luci/applications/luci-app-unblockmusic
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git
-
-# alist
-git clone https://github.com/sbwml/openwrt-alist --depth=1
 
 # Add luci-app-vssr <M>
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git
