@@ -161,3 +161,6 @@ svn co https://github.com/DHDAXCW/packages/trunk/utils/coremark customfeeds/pack
 
 # 替换默认主题为 luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
+
+# 删除强制默认主题
+rm -rf package/community/luci-theme-opentomcat/files/30_luci-theme-opentomcat
